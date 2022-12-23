@@ -8,9 +8,9 @@ def main():
     
     st.title("Student partner")
 
-    n                  = st.text_input("Name", "Your name")
-    a                  = int(st.number_input('Age'))
-    g                  = st.text_input("Gender", "Your gender")
+    name               = st.text_input("Name", "Your name")
+    age                = int(st.number_input('Age'))
+    gender             = st.text_input("Gender", "Your gender")
     mail               = st.text_input("Mail", "Your Mail Id")
     lang               = st.text_input("Language", "Your language")
 
@@ -23,7 +23,7 @@ def main():
     paper              = int(st.number_input('Paper published (1-10)'))
 
 
-    info = {id:"1001","name":n,"age":a,"gender":g,"email":mail,"language":lang,"linkedin_act":linkedin,"github_act":github,"paper_published":paper, "interest":Interest}
+    info = {id:"1001","name":name,"age":age,"gender":gender,"email":mail,"language":lang,"linkedin_act":linkedin,"github_act":github,"paper_published":paper, "interest":Interest}
      
     
     if st.button("Predict"):
