@@ -31,9 +31,9 @@ def find_top_similar_entitties(max, nba, distance_frame, primary_column, sec_col
         print('similar '+str(i)+' : '+str(close_to_the_top_founder) + ', email : ' +str(mail) + ", Similarity Percentile : "+ (str(percentile)))
 
         current_user = {
-            "name" : str(close_to_the_top_founder),
-            "email" : str(mail),
-            "similarity percentile" : percentile
+            "Name" : str(close_to_the_top_founder), 
+            "Email" : str(mail),
+            "Similarity percentile" : percentile
         }
 
         similar_list.append(current_user)

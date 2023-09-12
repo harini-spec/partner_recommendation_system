@@ -31,7 +31,7 @@ def main():
         result = simi.find_similar_student(info)
         data = pd.DataFrame.from_dict(result)
 
-        st.table(data)
+        st.table(data[1:])
     
 if __name__ == "__main__":
     main()
