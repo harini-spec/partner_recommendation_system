@@ -3,7 +3,6 @@ import pandas as pd
 import similar as simi
 
 
-
 def main():
     
     st.title("Student partner")
@@ -24,10 +23,9 @@ def main():
 
 
     info = {id:"1001","name":name,"age":age,"gender":gender,"email":mail,"language":lang,"linkedin_act":linkedin,"github_act":github,"paper_published":paper, "interest":Interest}
-     
     
     if st.button("Predict"):
-
+        
         result = simi.find_similar_student(info)
         data = pd.DataFrame.from_dict(result)
 
